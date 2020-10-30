@@ -1,0 +1,39 @@
+//Write a java program to check whether a number is prime or not
+
+
+import java.util.Scanner;
+public class Prime
+{
+    public static void main(String args[])
+    {
+        int p,q=0;
+        System.out.println("Enter the number :");
+        Scanner s=new Scanner(System.in);
+        p=s.nextInt();
+        for(int i=2;i<=p/2;i++)
+        {
+            if(p%i==0)
+                q=1;
+            else
+                q=0;
+        }
+        if(p==1)
+            System.out.println("THe number is neither prime nor composite.");
+        else
+        {
+            if(q==0)
+                System.out.println("The given number is a prime number .");
+            else
+                System.out.println("The given number is not a prime number .");
+        }
+    }
+}
+
+
+OUTPUT
+
+$javac Prime.java
+$java -Xmx128M -Xms16M Prime
+Enter the number :
+13
+The given number is a prime number .

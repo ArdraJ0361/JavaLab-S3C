@@ -1,0 +1,38 @@
+//Write a java program to chech whether a number is palindrome or not
+
+
+import java.util.Scanner;
+public class Palindrome
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter the number : ");
+        int p=s.nextInt();
+        int remainder,reverse=0;
+        int q=p;
+        while(p>0)
+        {
+            remainder=p%10;
+            reverse=(reverse*10)+remainder;
+            p=p/10;
+        }
+        if(reverse==q)
+        {
+            System.out.println("The number is palindrome ");
+        }
+        else
+        {
+            System.out.println("the number is not palindrome ");
+        }
+    }
+}
+
+
+OUTPUT
+
+$javac Palindrome.java
+$java -Xmx128M -Xms16M Palindrome
+Enter the number : 
+121
+the number is palindrome 

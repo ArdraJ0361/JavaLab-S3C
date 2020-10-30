@@ -1,0 +1,23 @@
+//Write a java program to add two numbers
+
+
+import java.io.*;
+public class AddNum
+{
+    public static void main(String []args)
+    {
+         int n1,n2,sum;
+         n1=5;
+         n2=2;
+         sum=n1+n2;
+         System.out.println("Sum of the numbers is "+sum);
+    }
+}
+
+
+
+OUTPUT
+
+$javac AddNum.java
+$java -Xmx128M -Xms16M AddNum
+Sum of the numbers is 7

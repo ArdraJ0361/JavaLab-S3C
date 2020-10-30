@@ -1,0 +1,33 @@
+//Write a java program to check whether a number is odd or even
+
+
+import java.io.*;
+import java.util.Scanner;
+public class OddEven
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Enter the number you want to check ");
+        Scanner num=new Scanner(System.in);
+        int n=num.nextInt();
+        if(n%2==0)
+        {
+            System.out.println("The number is even");
+        }
+        else
+        {
+            System.out.println("The number is odd ");
+        }
+    }
+}
+
+
+OUTPUT
+
+$javac OddEven.java
+$java -Xmx128M -Xms16M OddEven
+Enter the number you want to check 
+10
+The number is even
+
+

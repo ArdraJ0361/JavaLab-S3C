@@ -1,0 +1,31 @@
+//Write a java program to find the sum of first n natural number
+
+
+import java.util.Scanner;
+public class SumofNumbers
+{
+    public static void main(String[] args)
+    {
+        int sum=0,num;
+        System.out.println("Enter the number : ");
+        Scanner s=new Scanner(System.in);
+        num=s.nextInt();
+        for(int i=0;i<=num;i++)
+        {
+            sum=sum+i;
+        }
+        System.out.println("Sum of the numbers is "+sum);
+    }
+}
+
+
+OUTPUT
+
+$javac SumofNumbers.java
+$java -Xmx128M -Xms16M SumofNumbers
+Enter the number : 
+10
+Sum of the numbers is 55
+
+
+

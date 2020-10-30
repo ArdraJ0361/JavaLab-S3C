@@ -1,0 +1,59 @@
+//Write a java program to print fibonacci series
+
+
+import java.util.Scanner;
+public class Fibonacci
+{
+    public static void main(String[] args)
+    {
+        int f,t=0,s=1,n;
+        System.out.println("Enter the number : ");
+        Scanner sc=new Scanner(System.in);
+        f=sc.nextInt();
+	System.out.println("Fibonacci series of the given number are : ");
+        for(int i=1;i<=f;i++)
+        {
+            System.out.println(t+" ");
+            n=t+s;
+            t=s;
+            s=n;
+        }
+    }
+}
+
+
+OUTPUT
+
+$javac Fibonacci.java
+$java -Xmx128M -Xms16M Fibonacci
+Enter the number : 
+25
+Fibonacci series of the given number are :
+0 
+1 
+1 
+2 
+3 
+5 
+8 
+13 
+21 
+34 
+55 
+89 
+144 
+233 
+377 
+610 
+987 
+1597 
+2584 
+4181 
+6765 
+10946 
+17711 
+28657 
+46368 
+
+
+

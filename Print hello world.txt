@@ -1,0 +1,21 @@
+//Write a java program to print hello world 
+
+
+
+import java.io.*;
+public class HelloWorld
+{
+    public static void main(String []args)
+    {
+         System.out.println("Hello World");
+    }
+}
+
+
+
+
+OUTPUT
+
+$javac HelloWorld.java
+$java -Xmx128M -Xms16M HelloWorld
+Hello World
